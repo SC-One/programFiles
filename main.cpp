@@ -1,10 +1,12 @@
 #include<iostream>
-#include"powerHeader.h"
+#include"Constants.h"
+
+using  constants::pi;   // single using declaration
 
 int main()
 {
-    for(int i{-3};i<=3;i++)
-        std::cout<<myPow(8.0,i)<<std::endl;
+    std::cout<<pi<<std::endl<<constants::e<<std::endl \
+            <<constants::sqrt2<<std::endl;
     return 0;
 }
 
